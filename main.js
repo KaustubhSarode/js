@@ -1,0 +1,32 @@
+console.log(window);
+console.log(window.outerHeight);
+console.log(window.outerHeight);
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+console.log(document.body);
+console.log(document.body.children[1]);
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.firstElementChild);
+console.log(document.body.lastElementChild);
+console.log(document.body.children[1].children[0]);
+console.log(document.body.children[1].children[0].parentElement);
+console.log(document.getElementsByTagName('ul'));
+console.log(document.getElementById('element'));
+console.log(document.getElementsByClassName('myclass'));
+console.log(document.querySelector('#element'));
+console.log(document.querySelector('.myclass'));
+console.log(document.querySelector('ul'));
+console.log(document.querySelectorAll('li'));
+// create  and append element
+var createItem = document.createElement('h2');
+createItem.textContent = 'Item Created';
+var list = document.body;
+var liitem = document.body.children[1].children[0];
+list.appendChild(createItem); 
+createli = document.createElement('li');
+createli.textContent = 'info';
+var firstli = document.querySelector('li');
+console.log(firstli); 
+document.querySelector('ul').insertAdjacentElement('afterbegin', createli);
+
